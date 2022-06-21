@@ -1,5 +1,6 @@
 {
   "name": "myapp",
+  "homepage":"https://sapir0507.github.io/myapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,12 +10,22 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.52.3",
+    "source-map-explorer": "^2.5.2",
     "web-vitals": "^2.1.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "analyze": "build && source-map-explorer 'build/static/js/*.js'",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

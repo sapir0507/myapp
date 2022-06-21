@@ -1,19 +1,18 @@
-import logo from './logo.svg';
+import Demo1PropsParent from './project/Demo1_Props/Demo1_PropsParent';
 import './App.css';
-import ChildComponent from './project/ChildComponent/ChildComponent';
+
 
 
 function App() {
   return (
     <div className="App">
-      
-        <ChildComponent/> {/* 
+       {/* 
         A component should always start with a capital letter or the rendering won't work.
 
         this is a second level component in the hierarchy. 
         */}
-
-        <img src={logo} className="App-logo" alt="logo" /> 
+        <Demo1PropsParent></Demo1PropsParent>
+       
 
     </div>
   );
