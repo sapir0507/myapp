@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import ChildComponent from './ChildComponent';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      
+        <ChildComponent/> {/* A component should always start with a capital letter or the rendering won't work */}
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
