@@ -1,12 +1,13 @@
 {
   "name": "myapp",
-  "homepage":"https://sapir0507.github.io/myapp/",
+  "homepage": "https://sapir0507.github.io/myapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -24,8 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "analyze": "build && source-map-explorer 'build/static/js/*.js'",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
