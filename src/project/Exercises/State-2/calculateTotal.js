@@ -8,6 +8,7 @@ function CalculateTotal() {
     
     return ( <div>
         <Container className="mt-5">
+            <h2>EX2</h2>
            <Row className="align-items-center">
            <Col sm="auto" className="mt-1">
                 Num :
