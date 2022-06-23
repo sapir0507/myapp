@@ -1,4 +1,4 @@
-import { Alert, Button } from 'react-bootstrap';
+import Alert from 'react-bootstrap/Alert';
 
 export default function Demo1PropsChild(props) {
   return (
