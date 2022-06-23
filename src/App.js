@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-pascal-case */
-
 import './App.css';
-import CalculateTotal from './project/Exercises/02_State/calculateTotal';
+import DRRepeater from './project/04_dynamic render/Repeater/DRRepeater';
+
+
 
 
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
      
-       <CalculateTotal></CalculateTotal>
+     <DRRepeater></DRRepeater>
 
     </div>
   );

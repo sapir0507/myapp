@@ -1,0 +1,9 @@
+table, tr, th, td{
+    border: 1px solid black;
+    margin: 5px auto;
+    border-collapse: separate; //is one border or a few borders
+}
+
+tr, th, td{
+    padding: 5px;
+}
