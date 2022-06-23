@@ -8,6 +8,7 @@ function DRRepeater() {
                                           'blue',
                                           'green']);
                                           
+    // eslint-disable-next-line no-unused-vars
     const [persons, setPersons] = useState([
         {name:'Avi', age: '20'},
         {name:'Dana', age: '30'},
