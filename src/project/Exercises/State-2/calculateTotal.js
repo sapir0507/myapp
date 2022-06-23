@@ -7,24 +7,29 @@ function CalculateTotal() {
     const [currentVal, setCurrentVal] = useState(0)
     
     return ( <div>
-        <Container className="mt-5 justify-content-md-center">
-           <Row>
-            <Col>
-                 <input type={"text"} id="inputValue" onChange={(e)=>{
-                    setCurrentVal(e.target.value)
+        <Container className="mt-5">
+           <Row className="align-items-center">
+           <Col sm="auto" className="mt-1">
+                Num :
+           </Col>
+            <Col sm="auto" className="mt-1">
+                  <input className="m-2" type={"text"} id="inputValue" placeholder="0" onChange={(e)=>{
+                    setCurrentVal(parseInt(e.target.value))
                  }} ></input>
             </Col>
-            <Col>
-                <Button variant="info" onClick={()=>{ 
-                    const val = parseInt(document.getElementById('inputValue').value)
-                    setCurrentVal(val)
-                    if(!isNaN(val)) setSum(sum + val)
-                    }}>+</Button>
-            </Col>
+          
+           
            </Row>
             <hr />
-            <Row>
-                <Col>
+            <Row className="align-items-center">  
+                <Col sm="auto">
+                    <Button variant="info" onClick={()=>{ 
+                        if(!isNaN(currentVal)) 
+                            setSum(sum + currentVal)
+                        }}>+</Button>
+                </Col>
+                <Col sm="auto" className="mx-3">
+                    
                     {!isNaN(currentVal) && <div>
                         Sum = {sum}
                     </div>}
