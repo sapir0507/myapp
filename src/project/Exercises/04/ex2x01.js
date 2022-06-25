@@ -12,15 +12,20 @@ function EX2x01() {
             return <Container key={i}>
                 <ListGroup variant="flush" as={'ul'}>
                     <ListGroup.Item className="bg-yellow" as={'li'}>
-                        <span>♦ </span><span className="text-capitalize">{person.name}</span> is {person.age} years old, lives in {person.city} and {person.isAdult? "an adult": "a minor"}</ListGroup.Item>
+                        <span>♦ </span>
+                        <span className="text-capitalize">
+                            {person.name}
+                        </span> 
+                        is {person.age} years old, lives in {person.city} and 
+                        {person.isAdult? "an adult": "a minor"}
+                    </ListGroup.Item>
                 </ListGroup>
             </Container>
         })
         
         }
         </div>
-        
-       
+
         <EX2x02 callback={(newData)=>{
             setData([...data, newData])
         }}></EX2x02>
