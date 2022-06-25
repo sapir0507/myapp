@@ -1,14 +1,13 @@
 /* eslint-disable react/jsx-pascal-case */
 import './App.css';
-import Ex06DynamicPersonsListComp from './project/Exercises/03_DynamicRender/Ex_06';
+import EX2x01 from './project/Exercises/04/ex2x01';
 
 
 
 function App() {
   return (
     <div>
-     
-    <Ex06DynamicPersonsListComp></Ex06DynamicPersonsListComp>
+      <EX2x01></EX2x01>
     </div>
   );
 }
