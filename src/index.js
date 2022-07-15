@@ -3,7 +3,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import reportWebVitals from './reportWebVitals';
+import MainComp from './project/components/main/main';
+import ProductsComp from './project/components/products/products';
 
 const App = lazy(()=>import('./App'));
 
@@ -12,16 +13,11 @@ root.render(
     <Router>
         <Suspense
         fallback={<div>Loading...</div>}>
-            <Routes>
-                <Route 
-                    path='/' 
-                    element={<App/>}
-                />
-            </Routes>
+            <App></App>
         </Suspense>
     </Router>
     // <App />
 
 );
 
-reportWebVitals();
+
